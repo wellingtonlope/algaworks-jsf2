@@ -3,14 +3,14 @@ package com.algaworks.cursojsf2.visao;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
 import com.algaworks.cursojsf2.dominio.Produto;
 
 @ManagedBean
-@SessionScoped
+@SessionScoped //Sessão do usuário
+//@ApplicationScoped //Até a aplicação ser finalizada
 public class GestaoProdutoBean {
 	
 	private List<Produto> produtos;
